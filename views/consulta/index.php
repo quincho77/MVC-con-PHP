@@ -10,10 +10,9 @@
         <?php require 'views/header.php'?>
         
         <div id="main">
-            <h2 class="center">Sección de ayuda</h2>
+            <h1 class="center">Sección de Consulta</h1>
         </div>
-        
         <?php require 'views/footer.php'?>
-        
     </body>
 </html>
+

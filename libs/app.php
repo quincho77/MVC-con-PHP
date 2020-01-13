@@ -6,14 +6,22 @@ class App
 {
     function __construct() 
     {
-        echo "<p>Nueva app</p>";
+        //echo "<p>Nueva app</p>";
         
-        $url = $_GET['url'];
+        $url = isset($_GET['url']) ? $_GET['url'] : null;
         $url = rtrim($url, '/');
         $url = explode('/', $url);
         
         //echo $url;
         //var_dump($url);
+        
+        if (empty($url[0]))
+        {
+            $fileController = 'controllers/main.php';
+            require_once $fileController;
+            $controller = new Main();
+            return false;
+        }// fin del if
         
         $fileController = 'controllers/' . $url[0] . '.php';
         
