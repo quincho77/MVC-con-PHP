@@ -7,6 +7,8 @@
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
             <word>ayuda</word>
+            <word>Editar</word>
+            <word>Matrícula</word>
         </spellchecker-wordlist>
     </configuration>
 </project>
